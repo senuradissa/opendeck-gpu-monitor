@@ -1,0 +1,24 @@
+{
+  "Name": "GPU Monitor",
+  "Description": "GPU 3D load and VRAM from Windows performance counters.",
+  "Author": "senuradissa",
+  "Version": "0.1.0",
+  "Category": "GPU Monitor",
+  "CategoryIcon": "imgs/plugin",
+  "Icon": "imgs/plugin",
+  "SDKVersion": 2,
+  "Software": { "MinimumVersion": "6.0" },
+  "OS": [{ "Platform": "windows", "MinimumVersion": "10" }],
+  "CodePath": "plugin.js",
+  "Nodejs": { "Version": "24" },
+  "Actions": [
+    {
+      "Name": "GPU Load",
+      "UUID": "dev.senura.gpumonitor.load",
+      "Icon": "imgs/action",
+      "Tooltip": "GPU 3D load and VRAM usage",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/action", "ShowTitle": false }]
+    }
+  ]
+}
